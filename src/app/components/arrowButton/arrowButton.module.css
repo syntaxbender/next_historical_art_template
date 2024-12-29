@@ -1,0 +1,34 @@
+.arrowButton{
+}
+.arrowButton{
+    outline: none;
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 180px;
+    /* width: 150px; */
+    background: transparent;
+    border-bottom:2px dashed var(--golden-dark);
+
+  }
+  .arrowButton a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    font-family: var(--font-montserrat);
+    font-size:25px;
+    font-weight:400;
+    color:var(--golden-dark);
+    transition: color ease .3s;
+    /* padding: 15px 25px; */
+  }
+  .arrowButton a svg{
+    font-size:35px;
+    color: var(--golden-dark);
+  }
+  

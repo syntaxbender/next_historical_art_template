@@ -1,0 +1,57 @@
+.customHeading h1{
+    position: relative;
+    font-size:50px;
+    color: var(--black);
+    font-weight: 400;
+    font-family: var(--font-gilda);
+    margin:10px 0px 80px 0px;
+}
+
+
+.customHeading h2{
+    font-size:16px;
+    color: var(--golden-dark);
+    font-weight: 400;
+    font-family: var(--font-montserrat);
+    text-transform: uppercase;
+    margin:10px 0px 10px 0px;
+}
+.center{
+    text-align: center;
+}
+.mini h1{
+    font-size: 40px;
+    margin:10px 0px 30px 0px;
+}
+.mini h1:after{
+    position: absolute;
+    width: 150px;
+    border-bottom: 1px dashed var(--golden-light);
+    bottom: -5px;
+    left:0px;
+    height: 2px;
+    content: "";
+}
+.mini h2{
+    font-size:14px;
+
+}
+@media (max-width: 991px) {
+.customHeading h2{
+    font-size:14px;
+}
+.customHeading h1{
+font-size:40px;
+}
+    .mini h1{
+        display: block;
+        text-align: center;
+    }
+    .mini h2{
+        display: block;
+        text-align: center;
+    }
+.mini h1:after{
+left:calc(50% - 75px)
+}
+}

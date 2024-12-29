@@ -1,0 +1,125 @@
+/* .quote{
+    position: absolute;
+    right:30px;
+    top:0px;
+    font-size:50px;
+    color:var(--golden);
+    text-align:right;
+    filter: drop-shadow(1px 1px 1px var(--textgray));
+} */
+
+.quoteL{
+    list-style: none;
+    position: absolute;
+    left:35px;
+    transform: scaleX(-1);
+    top:20px;
+    line-height: 100%;
+    font-size:40px;
+    color:var(--golden);
+    text-align:right;
+    /* filter: drop-shadow(1px 1px 1px var(--textgray)); */
+}
+/* .quoteR{
+    position: absolute;
+    right:20px;
+    bottom:0px;
+    font-size:40px;
+    color:var(--golden);
+    text-align:right;
+    filter: drop-shadow(1px 1px 1px var(--textgray));
+} */
+.commentText{
+    font-size:17px;
+    margin: 15px 0px 5px 0px;
+    display: block;
+}
+/* .comment{
+    position: relative;
+    background: var(--golden-white);
+    padding: 30px;
+    border-radius: 15px;
+    width: 550px;
+    box-shadow: 2px 2px 20px -5px rgba(0, 0, 0, 0.101);
+} */
+.comment{
+    position: relative;
+    background: #FFF;
+    padding: 70px 40px 40px 40px;
+    width: 550px;
+    box-shadow: 2px 2px 20px -5px rgba(0, 0, 0, 0.101);
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0px 0px 0px;
+}
+.images > img{
+    width:120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 7px;
+    box-shadow: 2px 2px 20px -5px rgba(0, 0, 0, 0.218);
+}
+.name, .pictureText{
+    font-size: 16px;
+    font-weight:600;
+}
+.name span{
+    display: block;
+    width: calc(100% - 60px);
+}
+.rating{
+    color: var(--golden);
+}
+.pictureText{
+    margin: 0px 0px 10px 0px;
+    display: block;
+}
+.galleryName{
+    color: #FFF;
+display: block;
+font-size: 20px;
+font-weight: 700;
+margin: 0px 0px 20px 0px;
+}
+.galleryText{
+    color: #FFF;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+.galleryInfo{
+
+}
+.overlayContainer{
+    position: absolute;
+    top:44px;
+    left: 0;
+    /* height: 100%; */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 50px 10px 50px;
+    text-align: center;
+    z-index:10;
+}
+@media (max-width: 991px) {
+    .comment{
+        padding: 60px 30px 30px 30px;
+        width: calc(100vw - 100px);
+    }
+    .images > img{
+        width: 90px;
+        height: 50px;
+    }
+    .commentText{
+    font-size:14px;
+    }
+    .pictureText{
+
+        font-size:14px;
+    }
+}

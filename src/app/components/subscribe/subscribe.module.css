@@ -1,0 +1,57 @@
+.submitGroup{
+    position: relative;
+    width: 500px;
+    margin: 0px auto;
+}
+.prettyInput{
+
+    outline: none;
+    padding: 12px 179px 12px 17px;
+    border: 1px solid #ababab;
+    font-size: 16px;
+    width: 100%;
+}
+.label{
+    display: block;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+.prettyButton{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background:transparent;
+    border:none;
+    top: 0px;
+    padding: 12px;
+    color: #ababab;
+    position: absolute;
+    right: 0px;
+}
+.prettyButton svg{
+    font-size:22px;
+    margin: 0px 10px 0px 0px;
+}
+
+.prettyButton:after{
+    position: absolute;
+    height: calc(100% - 20px);
+    width: 1px;
+    content:" ";
+    left:0px;
+    top:10px;
+    border-left: 1px solid #ababab;
+}
+.message{
+    display: block;
+    text-align: center;
+    margin: 20px 0px;
+    padding: 15px 0px;
+    color: var(--golden-white);
+    background: var(--dusty-rose-light);
+}
+@media (max-width: 991px) {
+.submitGroup{
+    width: calc(100vw - 40px);
+}
+}

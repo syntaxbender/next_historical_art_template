@@ -1,0 +1,65 @@
+ /* .mainNav .logo h1 {
+    line-height: 100px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #1e1e1e;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  
+  .backgroundHeader .mainNav .logo h1 {
+    line-height: 80px;
+  } */
+  
+  .mainNav {
+    display: flex;
+    justify-content: center;
+    gap:20px
+  }
+
+  
+  .mainNav div {
+    height: 70px;
+    line-height: 70px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    margin-top: 5px;
+  }
+  
+  .mainNav div a {
+    text-transform: uppercase;
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--white);
+    border: transparent;
+    letter-spacing: 1px;
+    padding: 0px 10px;
+    position: relative;
+  }
+  .mainNav div a:after {
+    /* border-radius: 100px; */
+    background: #00000000;
+    content:"";
+    display: block;
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    /* border-bottom: 1px solid #ffffff00; */
+    transition: all ease .5s;
+    z-index: -1;
+  }
+  .mainNav div a:hover:after {
+    background: #ffffff26;
+    width: 100%;
+    /* border-bottom: 1px solid var(--white); */
+  }
+  .mainNavActive:after {
+    background: #ffffff26;
+    width: 100%;
+    /* border-bottom: 1px solid var(--white); */
+  }

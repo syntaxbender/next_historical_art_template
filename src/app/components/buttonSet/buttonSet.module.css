@@ -1,0 +1,100 @@
+.buttonSet {
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 180px;
+  transition: background ease .3s;
+  box-shadow: 2px 2px 10px -5px #00000087;
+}
+
+.buttonSet.primary {
+  background: var(--golden);
+}
+
+.buttonSet.secondary {
+  background: var(--dusty-rose);
+}
+
+.buttonSet.animateBounce a svg {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+.buttonSet.iconRight a svg {
+  margin: 0px 0px 0px 5px;
+}
+
+.buttonSet.iconLeft a svg {
+  margin: 0px 5px 0px 0px;
+
+}
+
+.buttonSet.bigger a {
+  font-size: 25px;
+  font-weight: 300;
+  /* padding: 30px 40px; */
+
+}
+
+.buttonSet.bigger {
+  height: 70px;
+  width: 270px;
+}
+
+.buttonSet.mini {
+  width: 150px;
+  height: 50px;
+}
+
+.centerBlock {
+  display: block;
+  margin: 0px auto;
+}
+
+.rightBlock {
+  display: block;
+  margin: 0px 0px 0px auto;
+}
+
+.buttonSet.opacity {
+  opacity: 0.8;
+}
+
+.buttonSet.primary:hover {
+  background: var(--golden-light);
+}
+
+.buttonSet.secondary:hover {
+  background: var(--dusty-rose-light);
+}
+
+/* .reservation:hover a{
+    color:var(--gray);
+  } */
+.buttonSet a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-montserrat);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--white);
+  transition: color ease .3s;
+  /* padding: 15px 25px; */
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+}

@@ -1,0 +1,40 @@
+.questionParagraph{
+    margin:0px 0px 30px 0px;
+}
+.contactDetail{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 30px 0;
+}
+.contactDetailImage {
+    background: var(--golden);
+    font-size: 25px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    border-radius: 999px;
+}
+.contactDetailHead h4 {
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+.contactDetailText p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+@media (max-width: 991px) {
+    .contactDetailHead h4 {
+    font-size: 20px;
+        
+    }
+.contactDetailText p {
+    font-size: 17px;
+
+}
+}

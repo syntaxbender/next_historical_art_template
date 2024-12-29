@@ -1,0 +1,15 @@
+.customParagraph p{
+    font-size:18px;
+    color: var(--textgray);
+    font-weight: 400;
+    font-family: var(--font-montserrat);
+    margin:20px 0px 20px 0px;
+}
+.customParagraph{
+    margin:80px 0px;
+}
+@media (max-width: 991px) {
+    .customParagraph p{
+        font-size:16px;
+    }
+}

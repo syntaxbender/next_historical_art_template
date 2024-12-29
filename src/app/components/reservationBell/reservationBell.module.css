@@ -1,0 +1,141 @@
+.reservationBell {
+    position: absolute;
+    bottom:50px;
+    right:50px;
+    cursor: pointer;
+    width: max-content;
+    background: var(--golden-light);
+    border-radius: 100px;
+    /* overflow: hidden; */
+    margin: 20px 0px 20px auto;
+    box-shadow: 2px 2px 10px -2px #00000078;
+}
+.reservationBell:hover .rbText {
+    width: 150px !important;
+}
+
+/* .reservationBell:after{
+    position: absolute;
+    top:-1px;
+    left:-1px;
+    background: red;
+    content: "1";
+    padding: 10px 7px;
+    line-height: 0px;
+    border-radius: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+} */
+.rbContainer {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.bellWrapper {
+    position: relative;
+    animation: rotate 10s infinite ease;
+    transform-origin: center top;
+    /* padding: 12px 15px; */
+    line-height: 0px;
+    width: 65px;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: var(--white);
+    font-size: 30px;
+}
+.bellWrapper:after {
+    position: absolute;
+    background: var(--dusty-rose);
+    content: "1";
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 0;
+    font-weight: 700;
+    align-items: center;
+    border-radius: 100px; 
+}
+
+.bellWrapper svg {
+    filter: drop-shadow(1px 1px 1px var(--textgray));
+    /* box-shadow: 1px 1px 1px var(--textgray); */
+}
+.rbText {
+    transition: width .5s ease;
+    overflow: hidden;
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 400;
+    width: 0px;
+    /* padding: 0px 20px 0px 0px; */
+
+    /* padding: 0px; */
+    /* animation: expandWidth 10s ease-in-out infinite 10s; */
+    /* animation-delay: ; */
+    text-shadow: 1px 1px 1px var(--textgray);
+
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    2% {
+        transform: rotate(5deg);
+    }
+    6% {
+        transform: rotate(-5deg);
+    }
+    10% {
+        transform: rotate(5deg);
+    }
+    14% {
+        transform: rotate(-5deg);
+    }
+    16% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+/* @keyframes expandWidth {
+    0% {
+        width: 0px;
+    }
+
+    3% {
+        width: 20px;
+    }
+
+    8% {
+        width: 0px;
+    }
+
+    11% {
+        width: 30px;
+    }
+
+    16% {
+        width: 0px;
+    }
+    19% {
+        width: 20px;
+    }
+    24% {
+        width: 0px;
+    }
+
+    100% {
+        width: 0px;
+    }
+} */

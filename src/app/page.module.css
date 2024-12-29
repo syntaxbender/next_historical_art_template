@@ -1,0 +1,13 @@
+.subscribeIcon{
+    width: 100px;
+    height: 100px;
+    background: var(--golden);
+    border-radius: 100%;
+    font-size: 70px;
+    display: flex;
+    color: #FFF;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto 20px auto;
+}

@@ -1,0 +1,114 @@
+:root{
+  --bg-gray:#efecdc;
+  --golden-white:#eae8d9;
+  --golden: #c19a5b;
+  --golden-dark: #5f3b00;
+  --golden-light: #cba466;
+  --white:#f6f5ed;
+  --dusty-rose-light:#7e3a3d;
+  --dusty-rose:#763235;
+  --black:#000;
+  --gray:#5a5a5a;
+  --blue:#004fff;
+  --textgray: #616161;
+  --swiper-pagination-bullet-width:15px;
+  --swiper-pagination-bullet-height:15px;
+  --swiper-pagination-color:var(--golden);
+  --swiper-pagination-bullet-horizontal-gap:7px;
+  --swiper-pagination-bullet-opacity:var(--gray);
+  /* --font-dm-sans: 'DM Sans', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif; */
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: var(--font-montserrat) !important;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--white) !important;
+  color: var(--textgray);
+}
+
+a {
+  text-decoration: none !important;
+  color:initial;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1e1e1e;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 19px;
+  line-height: 2rem;
+  color: var(--textgray);
+  display: block;
+  margin: 30px 0px;
+}
+
+div{
+  border:none;
+  outline: none;
+}
+button{
+  min-height: inherit;
+}
+.swiper-slide{
+  width:550px !important;
+}
+.swiper-pagination{
+  position: relative !important;
+  margin:50px 0px 0px 0px !important;
+}
+
+section.section{
+  padding:75px 0px;
+}
+section.bg-goldendark{
+  background:var(--bg-gray);
+}
+
+
+@media (max-width: 991px) {
+  section.section{
+    padding: 75px 15px;
+  }
+}
+
+@media (max-width: 767px) {
+
+}
+@media (max-width: 575px) {
+
+
+}
