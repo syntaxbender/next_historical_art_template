@@ -76,7 +76,7 @@ const Header = ({title,tawkRef=null}) => {
           </div>
         </div>
         <video autoPlay loop muted>
-          <source src="/videos/banner2.mp4" type="video/mp4" />
+          <source src="/videos/background.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div></div>
